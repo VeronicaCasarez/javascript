@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    display: grid;
+    grid-column: 1fr 1fr 1fr; 
+    grid-row: 1fr;
+    grid-template-areas: "header"
+                          "main"
+                          "footer";
+}
+.header{
+    position: sticky;
+    top: 0; 
+    z-index: 2;
+    grid-area: header;
+}
+
+.main{
+    grid-area: main;
+
+}
+.footer{
+    grid-area: footer;
+} 
+
+/* EDICION DE LAS IMAGENES DEL CAROUSEL DEL INDEX */
+.container-fluid{
+    height: 90%;
+    width: 100%;
+  
+   }
+   
+   .carousel-inner img {
+    
+      width: 100%;
+      max-height: 600px;
+  }
+  
+  .carousel-inner{
+   height: 95%;
+  }
+ 
+  
+  
+
+
+/* EDICION DE LOS TEXTOS DE NOVEDADES */
+
+.textoNovedades,
+.textoOfertas{
+    text-align: center;
+    font-size:40px;    
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3%;
+    color: rgb(71, 68, 68);
+}
+
+/* EDICION DE LAS CARD */
+
+.containerCard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    margin: 4%;
+   
+}
+
+.cardZapas{
+    width: 18rem;
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius:3%;
+    position: relative;
+    margin-bottom: 2%;
+    
+    
+}
+.textoNew{
+    
+    position: absolute;
+    background-color: coral;
+    border: 1px solid grey;
+    border-radius: 10%;
+    padding: 1%;
+    color: white;
+   
+}
+
+.cardImg{
+    width: 16rem;
+    
+}
+
+.imgCarrito{
+    width: 16%;
+    height: auto;
+
+}
+
+
+    
+.iconComprar{
+    text-align: center;
+
+}
+
+
+
+/* .cardBotonComprar{
+   
+    background-color: gray;
+    border: 1px solid rgb(41, 41, 41);
+    border: 1px solid rgb(41, 41, 41);
+    border-radius: 7%;
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    text-align: center;
+    
+   
+}
+
+.cardBotonComprar:hover{
+    background-color: white;
+    border: 1px solid gray;
+    border: 1px solid gray;
+    color: gray;
+    
+
+} */
+
+/* EDICION CARD DE OFERTAS */
+
+.textoSale{
+    
+    position: absolute;
+    background-color: red;
+    border: 1px solid rgb(128, 9, 9);
+    border-radius: 10%;
+    padding: 1%;
+    color: white;
+   
+}
