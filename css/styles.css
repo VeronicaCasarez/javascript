@@ -1,31 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --clr-main: #4b33a8;
+    --clr-main-light: #785ce9;
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #961818;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.body{
+/* EDICION ESTRUCTURA CON GRID */
+.bodyGrid{
+    width: 100%;
+    height: 100%; 
     display: grid;
-    grid-column: 1fr 1fr 1fr; 
-    grid-row: 1fr;
+    grid-column: 1fr ; 
+    grid-row: auto auto auto ;
     grid-template-areas: "header"
                           "main"
                           "footer";
+                          
 }
-.header{
+.headerGrid{
+    width: 100%;
+    height: 100%; 
     position: sticky;
     top: 0; 
     z-index: 2;
     grid-area: header;
+    display: flex;
+    flex-direction: column;
+    
 }
 
-.main{
+.mainGrid{
+   
     grid-area: main;
 
 }
-.footer{
+.footerGrid{
     grid-area: footer;
 } 
+
+/* EDICION DEL NAVEGADOR */
+.menu {
+    background-color: rgb(234, 224, 224);
+    display: flex;
+    flex-direction: row;
+    
+}
+ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+.boton-menu {
+    background-color: transparent;
+    border: 0;
+    color: dark;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.boton-menu.active {
+    background-color:pink;
+    color: black;
+    border-radius: 1rem;
+    
+    position: relative;
+}
+
+.boton-menu.active::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+   
+   
+}
+
+.boton-menu.active::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    
+}
+
+
+/* EDICION DEL BOTON SEARCH */
+
+
 
 /* EDICION DE LAS IMAGENES DEL CAROUSEL DEL INDEX */
 .container-fluid{
@@ -34,7 +118,7 @@
   
    }
    
-   .carousel-inner img {
+    .carousel-inner img {
     
       width: 100%;
       max-height: 600px;
@@ -48,10 +132,9 @@
   
 
 
-/* EDICION DE LOS TEXTOS DE NOVEDADES */
+/* EDICION DE LOS TITULOS PRINCIPALES DE LAS PAGINAS */
 
-.textoNovedades,
-.textoOfertas{
+.tituloPincipal{
     text-align: center;
     font-size:40px;    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -71,7 +154,7 @@
 }
 
 .cardZapas{
-    width: 18rem;
+    width: 16rem;
     border: 1px solid grey;
     padding: 1rem;
     border-radius:3%;
@@ -97,42 +180,30 @@
 }
 
 .imgCarrito{
-    width: 16%;
+    max-width: 14%;
     height: auto;
+
 
 }
 
 
-    
+.botonComprar{
+    max-width: 50%;
+    border: none;
+    background-color: rgb(196, 202, 202);
+    border-radius: 2rem;
+    padding: 0.5rem;
+} 
+.botonComprar:hover{
+    max-width: 50%;
+    border: none;
+    background-color: rgb(108, 114, 114);
+}
+
 .iconComprar{
     text-align: center;
 
 }
-
-
-
-/* .cardBotonComprar{
-   
-    background-color: gray;
-    border: 1px solid rgb(41, 41, 41);
-    border: 1px solid rgb(41, 41, 41);
-    border-radius: 7%;
-    text-decoration: none;
-    color: white;
-    padding: 2%;
-    text-align: center;
-    
-   
-}
-
-.cardBotonComprar:hover{
-    background-color: white;
-    border: 1px solid gray;
-    border: 1px solid gray;
-    color: gray;
-    
-
-} */
 
 /* EDICION CARD DE OFERTAS */
 
@@ -145,4 +216,103 @@
     padding: 1%;
     color: white;
    
+}
+
+/* EDICION DEL FOOTER*/
+
+footer{
+    border-top: 1px solid rgb(190, 187, 187);
+}
+
+/* EDICION PAGINA CARRITO  */
+
+.contenedorCarrito{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem
+}
+.imgCarritoVacio{
+    width: 2%;
+}
+
+.carritoVacio,
+.carritoComprado{
+    color:gray;
+}
+
+.carritoProductos{
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+}
+
+.carritoProducto{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(205, 199, 199);
+    color:white ;
+    padding: .5rem;
+    border-radius: 1rem;
+
+
+}
+.carritoProductoImagen{
+    max-width: 8rem ;
+    border-radius: 1rem;
+
+}
+
+.carritoAcciones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.carritoAccionesVaciar{
+    border:0;
+    background-color: rgb(238, 206, 166);
+    padding: 1rem;
+    border-radius: 1rem;
+    color:rgb(195, 115, 115)
+    
+}
+
+.carritoAccionesDerecha{
+    display: flex;
+    
+}
+.carritoAccionesTotal{
+    display: flex;
+    border:0;
+    background-color: rgb(238, 206, 166);
+    padding: 1rem;
+    border-radius: 1rem;
+    color:rgb(130, 119, 119);
+    margin-right:1rem ;
+    
+}
+
+.carritoAccionesComprar{
+    border:0;
+    background-color: rgb(189, 156, 116);
+    padding: 1rem;
+    border-radius: 1rem;
+    color:rgb(87, 76, 76)
+    
+}
+/* .disable{
+    display: none;
+} */
+
+.contadorCarrito{
+    background-color: grey;
+    color: white;
+    padding: .15rem .25rem;
+    border-radius: .25rem;
+}
+.carritoProductoEliminar{
+    border: 0;
+    background-color: transparent;
+}
+.imgTacho{
+    max-width: 60%;
 }

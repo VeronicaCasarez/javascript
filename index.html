@@ -5,66 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+  
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script defer src="./js/arrays.js"></script>
     <script  defer src="./js/metodos.js"></script>
     <script  defer src="./js/objetos.js"></script>
+
+    
 
     
     
     <link rel="stylesheet" href="css/styles.css">
     
 
-    <title>MOU</title>
+    <title>Home</title>
 </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-dark ">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="javascript:void(0)">MOU </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="mynavbar">
-                <ul class="navbar-nav me-auto">
-                
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"> PRODUCTOS </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">HOMBRE</a></li>
-                      <li><a class="dropdown-item" href="#">MUJER</a></li>
-                      <li><a class="dropdown-item" href="#">NIÑOS</a></li>
-                    </ul>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)"> PREGUNTAS FRECUENTES </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="javascript:void(0)"> CONTACTO </a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="text" placeholder="Search">
-                  <button class="btn btn-primary" type="button">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
+<body class="bodyGrid">
+    <header class="headerGrid">
+      <nav>
+        <ul class="menu">
+            <li>
+                <button id="todos" class="boton-menu boton-categoria active"> Todos los productos</button>
+            </li>
+            <li>
+                <button id="mujeres" class="boton-menu boton-categoria"> Mujeres</button>
+            </li>
+            <li>
+                <button id="hombres" class="boton-menu boton-categoria"> Hombres</button>
+            </li>
+            <li>
+                <button id="guiaTalles" class="boton-menu boton-categoria"> Guia de talles</button>
+            </li>
+            <li>
+                <a class="boton-menu boton-carrito" href="./carrito.html">
+                    <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                </a>
+            </li>
+       
+        
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Buscar productos" aria-label="Search">
+          <button  class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+      </ul>
+      </nav>
     </header>
 
-    <main>
-      <div class="container-fluid bg-primary">
-        <div class="row bg-dark">
+    <main class="mainGrid">
+      
+        
       
           <!-- ================== 1-carousel bootstrap  ==================  -->
           <div id="carousel1_indicator" class="carousel slide" data-ride="carousel">
@@ -73,7 +71,7 @@
               <li data-target="#carousel1_indicator" data-slide-to="1"></li>
               <li data-target="#carousel1_indicator" data-slide-to="2"></li>
             </ol>
-          <div class="carousel-inner">
+            <div class="carousel-inner">
               <div class="carousel-item active">
                 <img class="d-block w-100" src="./image/zapas-mujer-descuento-10.jpg" alt="First slide">
                 <div class="carousel-caption d-none d-md-block text-left" >
@@ -101,118 +99,105 @@
                 </div>
               </div>
             </div>
-            <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
+            <div>
+              <a class="carousel-control-prev" href="#carousel1_indicator" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carousel1_indicator" role="button" data-slide="next">
+              </a>
+              <a class="carousel-control-next" href="#carousel1_indicator" role="button" data-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="sr-only">Next</span>
-            </a>
+               </a>
           </div>
       
-      
+    </div>
+        
+      <div>  
+        <h2 class="tituloPrincipal">NOVEDADES</h2>
+        <div id="contenedorProductos" class="containerCard">
+          <div class="cardZapas" class="producto">
+            <span class="textoNew">NEW</span>
+            <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
+            <div class="cardDetalles">
+              <h5 class="cardTitulo">New Balance </h5>
+              <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <p class="cardPrecio"></p>
+              <div class="iconComprar">
+                <button  class="botonComprar" title="Agregar al carrito" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
+              </div>
+            </div>
+          </div>
+        
+
+        <div class="cardZapas"class="producto" >
+          <span class="textoNew">NEW</span>
+          <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
+          <div class="cardBody">
+              <h5 class="cardTitulo">New Balance </h5>
+              <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <div class="iconComprar">
+                <button  class="botonComprar" title="Agregar al carrito" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
+              </div>
+          </div>
         </div>
-      
-      </div>
-        
-        
-        <h2 class="textoNovedades">NOVEDADES</h2>
-        <div class="containerCard">
-          <div class="cardZapas" >
-            <span class="textoNew">NEW</span>
-            <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
-            <div class="cardBody">
-            
-              <h5 class="cardTitulo">New Balance </h5>
-              <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="iconComprar">
-                <a  href=""><img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></a>
-        
-              </div>
-            </div>
-          </div>
 
-          <div class="cardZapas" >
-            <span class="textoNew">NEW</span>
-            <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
-            <div class="cardBody">
-            
+        <div class="cardZapas" class="producto" >
+          <span class="textoNew">NEW</span>
+          <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
+          <div class="cardBody">
               <h5 class="cardTitulo">New Balance </h5>
               <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <div class="iconComprar">
-                <a  href=""><img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></a>
-        
+                <button  class="botonComprar" title="Agregar al carrito" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
               </div>
-            </div>
           </div>
-
-          <div class="cardZapas" >
-            <span class="textoNew">NEW</span>
-            <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
-            <div class="cardBody">
-            
-              <h5 class="cardTitulo">New Balance </h5>
-              <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <div class="iconComprar">
-                <a  href=""><img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></a>
-        
-              </div>
-            </div>
-          </div>
+        </div>
 
          
-
-        </main>
-
-          <h2 class="textoOfertas">OFERTAS</h2>
-
-          <div class="containerCard">
-            <div class="cardZapas" >
-              <span class="textoSale">SALE</span>
-              <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
-              <div class="cardBody">
-              
-                <h5 class="cardTitulo">New Balance </h5>
-                <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="iconComprar">
-                  <a  href=""><img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></a>
-          
-                </div>
-              </div>
-            </div>
-  
-            <div class="cardZapas" >
-              <span class="textoSale">SALE</span>
-              <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
-              <div class="cardBody">
-              
-                <h5 class="cardTitulo">New Balance </h5>
-                <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="iconComprar">
-                  <a  href=""><img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></a>
-          
-                </div>
-              </div>
-            </div>
-  
-            <div class="cardZapas" >
-              <span class="textoSale">SALE</span>
-              <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
-              <div class="cardBody">
-              
-                <h5 class="cardTitulo">New Balance </h5>
-                <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="iconComprar">
-                  <a  href=""><img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></a>
-          
-                </div>
-              </div>
-            </div>
-  
+      </div>
         
+      <div>
+                  
+        <h2 class="tituloPrincipal">OFERTAS</h2>
+        <div class="containerCard">
+
+            <div class="cardZapas" >
+              <span class="textoSale">SALE</span>
+              <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
+              <div class="cardBody">
+                <h5 class="cardTitulo">New Balance </h5>
+                <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="iconComprar">
+                  <button  class="botonComprar" title="Agregar al carrito" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
+                </div>
+              </div>
+            </div>
   
-          </div>
+            <div class="cardZapas" >
+              <span class="textoSale">SALE</span>
+              <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
+              <div class="cardBody">
+                <h5 class="cardTitulo">New Balance </h5>
+                <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="iconComprar">
+                  <button  class="botonComprar" title="Agregar al carrito" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
+                </div>
+              </div>
+            </div>
+  
+            <div class="cardZapas" >
+              <span class="textoSale">SALE</span>
+              <img class="cardImg" src="./image/zapatillas-mujer-new-balance.jpg" alt="...">
+              <div class="cardBody">
+                <h5 class="cardTitulo">New Balance </h5>
+                <p class="cardTexto">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="iconComprar">
+                  <button  class="botonComprar" title="Agregar al carrito" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
 
 
     </main>
@@ -220,36 +205,29 @@
    <!-- Remove the container if you want to extend the Footer to full width. -->
 
 
-   <footer class="bg-dark text-center text-white"  >
+   
+   <footer class="text-center text-white" style="background-color: #f1f1f1;">
     <!-- Grid container -->
-    <div class="container p-4 pb-0">
+    <div class="container pt-4">
       <!-- Section: Social media -->
       <section class="mb-4">
         <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-facebook-f"></i
-        >Facebook</a>
-  
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-instagram"></i
-        >Instagram</a>
-
-          <!-- Whatsapp -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-          ><i class="fab fa-whatsapp"></i
-        >Whatsapp</a>
-  
-       
-  
-     
+        <div class=" ">
+          <lu >
+           <li  class="d-inline-block m-3 w-8"><a href=""><img src="./image/icon-facebook.svg" alt=""></a></li>
+           <li  class="d-inline-block m-3 w-8"><a href=""><img src="./image/icons-instagram.svg" alt=""></a></li>
+           <li  class="d-inline-block m-3 w-8"><a href=""><img src="./image/icons-whatsapp.svg" alt=""></a></li>
+          </lu>
+        </div>
+      </section>
+      <!-- Section: Social media -->
     </div>
     <!-- Grid container -->
   
     <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
       © 2020 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
     </div>
     <!-- Copyright -->
   </footer>
