@@ -1,130 +1,278 @@
-const productos=[
-                {id:0,
-                item:"New",
-                marca:"New Balance", 
-                genero:"mujer", 
-                categoria:{nombre:"zapasmujer", 
-                            id:"mujeres"}, 
-                talle:35,
-                imagen:"./image/zapatillas-mujer-new-balance.jpg",
-                texto:"New Balance de mujer, del 35 al 37",   
-                modeloProveedor:1625,  
-                precio:6000},
+const productos = [
 
-                {id:1,
-                item:"New",
-                marca:"New Balance", 
-                genero:"mujer", 
-                categoria:{nombre:"zapasmujer", 
-                            id:"mujeres"}, 
-                talle:36, 
-                imagen:"./image/zapatillas-mujer-new-balance.jpg",
-                modeloProveedor:1626, 
-                
-                precio:7000 },
+     // ZAPATILLAS SALE
+     {
+        id: "zapatillas-sale-01",
+        titulo: "Zapatilla-sale-01",
+        texto:"Sale",
+        imagen: "./image/zapassale/01.jpg",
+        categoria: {
+            nombre: "Ofertas",
+            id: "sale"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatillas-sale-02",
+        titulo: "Zapatilla-sale-02",
+        texto:"Sale",
+        imagen: "./image/zapassale/02.jpg",
+        categoria: {
+            nombre: "Ofertas",
+            id: "sale"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatillas-sale-03",
+        titulo: "Zapatilla-sale-03",
+        texto:"Sale",
+        imagen: "./image/zapassale/03.jpg",
+        categoria: {
+            nombre: "Ofertas",
+            id: "sale"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatillas-sale-04",
+        titulo: "Zapatilla-sale-04",
+        texto:"Sale",
+        imagen: "./image/zapassale/04.jpg",
+        categoria: {
+            nombre: "Ofertas",
+            id: "sale"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatillas-sale-05",
+        titulo: "Zapatilla-sale-05",
+        texto:"Sale",
+        imagen: "./image/zapassale/05.jpg",
+        categoria: {
+            nombre: "Ofertas",
+            id: "sale"
+        },
+        precio: 1000
+    },
 
-                {id:2,
-                item:"Sale",
-                marca:"Converse", 
-                genero:"hombre", 
-                categoria:{nombre:"zapashombre", 
-                id:"hombres"},
-                talle:35, 
-                imagen:"./image/zapatillas-mujer-new-balance.jpg",
-                modeloProveedor:1645, 
-                
-                precio:5000 },
-
-                {id:3,
-                item:"Sale",
-                marca:"Converse", 
-                genero:"mujer", 
-                categoria:{nombre:"zapashombre", 
-                id:"hombres"},
-                talle:35, 
-                imagen:"./image/zapatillas-mujer-new-balance.jpg",
-                modeloProveedor:1686, 
-                
-                precio:5000 },
-
-]
-
-
-
-// const contenedorProductos= document.querySelector("#contenedorProductos")
-// const botonesCategorias=document.querySelectorAll(".botonCategoria")
-// const tituloPrincipal=document.querySelectorAll(".botonCategoria")
-
-// function cargarProductos(productosElegidos){
-
-//     contenedorProductos.innerHTML=""
-//     productosElegidos.forEach(producto => {
-
-//         const div =document.createElement("div")
-//         div.classList.add("producto")
-//         div.innerHTML=`
-//             <span class="textoNew">${producto.item}</span>
-//             <img class="cardImg" src="${producto.imagen}" alt="${producto.marca}">
-//             <div class="cardDetalles">
-//               <h5 class="cardTitulo">${producto.marca} </h5>
-//               <p class="cardTexto">${producto.texto}.</p>
-//               <p class="cardPrecio">${producto.precio}</p>
-//               <div class="iconComprar">
-//                 <button  class="botonComprar" title="Agregar al carrito" id="${producto.id}" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
-//               </div>
-//             </div>
-//           `
-//     })
-//     contenedorProductos.append(div)
-// }
-// cargarProductos(productos)
-
-
-// botonesCategorias.forEach(boton=>{
-//     boton.addEventListener("click",(e)=>{
-
-//         botonesCategoria.forEach(boton=>boton.classList.remove("active"))
-//         e.currentTarget.classList.add("active")
+    // ZAPATILLAS HOMBRE
+    
+    {
+        id: "zapatilla-hombre-01",
+        titulo: "Zapatilla-hombre-01",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/01.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-hombre-02",
+        titulo: "Zapatilla-hombre-02",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/02.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-hombre-03",
+        titulo: "Zapatilla-hombre-03",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/03.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
         
-//         if(e.currentTarget.id !="todos"){
-//         const productosCategoria = productos.find(producto=>producto.categoria.id=== e.currentTarget.id)
-//         tituloPrincipal.innerHTML="Todos los productos"
+        id: "zapatilla-hombre-04",
+        titulo: "Zapatilla-hombre-04",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/04.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        
+        id: "zapatilla-hombre-05",
+        titulo: "Zapatilla-hombre-05",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/05.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-hombre-06",
+        titulo: "Zapatilla-hombre-06",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/06.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-hombre-07",
+        titulo: "Zapatilla-hombre-07",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/07.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-hombre-08",
+        titulo: "Zapatilla-hombre-08",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/08.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-hombre-09",
+        titulo: "Zapatilla-hombre-09",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/09.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-hombre-10",
+        titulo: "Zapatilla-hombre-10",
+        texto:"Hombre",
+        imagen: "./image/zapashombre/10.jpg",
+        categoria: {
+            nombre: "Hombres",
+            id: "hombres"
+        },
+        precio: 1000
+    },
 
-//         const productosBoton=productos.filter(producto=>producto.categoria.id=== e.currentTarget.id)
-//             cargarProductos(productosBoton)
-//         }else{
-//             tituloPrincipal.innerHTML="Todos los productos"
-//             cargarProductos(productos)
-//         }
-//     })
+    // ZAPATILLAS MUJER
+    {
+        
+        id: "zapatilla-mujer-01",
+        titulo: "Zapatilla-mujer-01",
+        texto:"Mujer",
+        imagen: "./image/zapasmujer/01.jpg",
+        categoria: {
+            nombre: "Mujeres",
+            id: "mujeres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-mujer-02",
+        titulo: "Zapatilla-mujer-02",
+        texto:"Mujer",
+        imagen: "./image/zapasmujer/02.jpg",
+        categoria: {
+            nombre: "Mujeres",
+            id: "mujeres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-mujer-03",
+        titulo: "Zapatilla-mujer-03",
+        texto:"Mujer",
+        imagen: "./image/zapasmujer/03.jpg",
+        categoria: {
+            nombre: "Mujeres",
+            id: "mujeres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-mujer-04",
+        titulo: "Zapatilla-mujer-04",
+        texto:"Mujer",
+        imagen: "./image/zapasmujer/04.jpg",
+        categoria: {
+            nombre: "Mujeres",
+            id: "mujeres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-mujer-05",
+        titulo: "Zapatilla-mujer-05",
+        texto:"Mujer",
+        imagen: "./image/zapasmujer/05.jpg",
+        categoria: {
+            nombre: "Mujeres",
+            id: "mujeres"
+        },
+        precio: 1000
+    },
+    {
+        id: "zapatilla-mujer-06",
+        titulo: "Zapatilla-mujer-06",
+        texto:"Mujer",
+        imagen: "./image/zapasmujer/06.jpg",
+        categoria: {
+            nombre: "Mujeres",
+            id: "mujeres"
+        },
+        precio: 1000
+    },
+    
+   
+];
 
-// })
 
-
-const contenedorProductos = document.querySelector("#contenedorProductos");
-const botonesCategorias = document.querySelectorAll(".botonCategoria");
-const tituloPrincipal = document.querySelector("#tituloPrincipal");
+const contenedorProductos = document.querySelector("#contenedor-productos");
+const botonesCategorias = document.querySelectorAll(".boton-categoria");
+const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
 
+
+
 function cargarProductos(productosElegidos) {
 
-    // contenedorProductos.innerHTML = "";
+    contenedorProductos.innerHTML = "";
 
     productosElegidos.forEach(producto => {
 
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-        <span class="textoNew">${producto.item}</span>
-                     <img class="cardImg" src="${producto.imagen}" alt="${producto.marca}">
-                     <div class="cardDetalles">
-                        <h5 class="cardTitulo">${producto.marca} </h5>
-                        <p class="cardTexto">${producto.texto}.</p>
-                        <p class="cardPrecio">${producto.precio}</p>
-                        <div class="iconComprar">
-                            <button  class="botonComprar" title="Agregar al carrito" id="${producto.id}" href="">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="imgCarrito"></button>
+                    <span class="producto-texto">${producto.texto}</span>
+                    <div>
+                        <img class="producto-imagen" src="${producto.imagen}" alt="${producto.marca}">
+                    </div>
+                    <div >
+                        <h5 class="producto-titulo">${producto.titulo} </h5>
+                        <p class="producto-detalle">${producto.detalle}.</p>
+                        <p class="producto-precio">${producto.precio}</p>
+                        <div class="icon-comprar">
+                            <button  class="producto-agregar" id="${producto.id}">Agregar <img  src="./image/carrito-de-compras.png" alt="" class="img-carrito"></button>
                         </div>
                      </div>
         `;
@@ -133,6 +281,7 @@ function cargarProductos(productosElegidos) {
     })
 
     actualizarBotonesAgregar();
+    
 }
 
 cargarProductos(productos);
@@ -144,6 +293,7 @@ botonesCategorias.forEach(boton => {
         e.currentTarget.classList.add("active");
 
         if (e.currentTarget.id != "todos") {
+
             const productoCategoria = productos.find(producto => producto.categoria.id === e.currentTarget.id);
             tituloPrincipal.innerText = productoCategoria.categoria.nombre;
             const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
@@ -156,6 +306,9 @@ botonesCategorias.forEach(boton => {
     })
 });
 
+
+
+
 function actualizarBotonesAgregar() {
     botonesAgregar = document.querySelectorAll(".producto-agregar");
 
@@ -163,6 +316,9 @@ function actualizarBotonesAgregar() {
         boton.addEventListener("click", agregarAlCarrito);
     });
 }
+
+
+
 
 let productosEnCarrito;
 
@@ -196,3 +352,16 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// BUSCA UN PRODUCTO POR MARCA
+
+// const buscardorProducto =querySelectorAll(".buscador")
+// function buscarProducto(){
+//     const productoBuscado=buscardorProducto
+    
+//     let productoEncontrado= productos.filter((zapas)=> productos.marca=== productoBuscado)
+    
+//     console.log(productoEncontrado)
+    
+//     }

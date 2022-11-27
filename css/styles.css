@@ -14,7 +14,7 @@
 }
 
 /* EDICION ESTRUCTURA CON GRID */
-.bodyGrid{
+.body-grid{
     width: 100%;
     height: 100%; 
     display: grid;
@@ -25,7 +25,7 @@
                           "footer";
                           
 }
-.headerGrid{
+.header-grid{
     width: 100%;
     height: 100%; 
     position: sticky;
@@ -34,21 +34,23 @@
     grid-area: header;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(234, 224, 224);
     
 }
 
-.mainGrid{
+.main-grid{
    
     grid-area: main;
 
 }
-.footerGrid{
+.footer-grid{
     grid-area: footer;
 } 
 
 /* EDICION DEL NAVEGADOR */
 .menu {
-    background-color: rgb(234, 224, 224);
+    
     display: flex;
     flex-direction: row;
     
@@ -61,7 +63,11 @@ ul {
 a {
     text-decoration: none;
 }
+
+
+/* EDICION BOTONES DEL NAVEGADOR */
 .boton-menu {
+
     background-color: transparent;
     border: 0;
     color: dark;
@@ -70,9 +76,10 @@ a {
     align-items: center;
     gap: 1rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
     width: 100%;
+    margin-top: .5rem;
 }
 
 .boton-menu.active {
@@ -109,7 +116,10 @@ a {
 
 /* EDICION DEL BOTON SEARCH */
 
-
+.buscador-productos{
+    margin-left: 20rem;
+    margin-top: .5rem;
+}
 
 /* EDICION DE LAS IMAGENES DEL CAROUSEL DEL INDEX */
 .container-fluid{
@@ -134,7 +144,7 @@ a {
 
 /* EDICION DE LOS TITULOS PRINCIPALES DE LAS PAGINAS */
 
-.tituloPincipal{
+#titulo-principal{
     text-align: center;
     font-size:40px;    
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -144,7 +154,7 @@ a {
 
 /* EDICION DE LAS CARD */
 
-.containerCard{
+.container-card{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -153,7 +163,7 @@ a {
    
 }
 
-.cardZapas{
+.producto{
     width: 16rem;
     border: 1px solid grey;
     padding: 1rem;
@@ -163,7 +173,7 @@ a {
     
     
 }
-.textoNew{
+.producto-texto{
     
     position: absolute;
     background-color: coral;
@@ -171,43 +181,34 @@ a {
     border-radius: 10%;
     padding: 1%;
     color: white;
+    display: flex;
+    flex-direction: column;
+   
    
 }
 
-.cardImg{
-    width: 16rem;
+
+.producto-imagen{
+    width: 100%;
+   
+    object-fit: cover;
+    margin-top: 2.5rem;
+    
+   
     
 }
 
-.imgCarrito{
+.img-carrito{
     max-width: 14%;
     height: auto;
+    
 
-
-}
-
-
-.botonComprar{
-    max-width: 50%;
-    border: none;
-    background-color: rgb(196, 202, 202);
-    border-radius: 2rem;
-    padding: 0.5rem;
-} 
-.botonComprar:hover{
-    max-width: 50%;
-    border: none;
-    background-color: rgb(108, 114, 114);
-}
-
-.iconComprar{
-    text-align: center;
 
 }
 
 /* EDICION CARD DE OFERTAS */
 
-.textoSale{
+.texto-card-sale{
     
     position: absolute;
     background-color: red;
@@ -218,6 +219,28 @@ a {
    
 }
 
+
+/* EDICION BOTONES COMPRAR */
+
+.producto-agregar{
+    max-width: 50%;
+    border: none;
+    background-color: rgb(196, 202, 202);
+    border-radius: 2rem;
+    padding: 0.5rem;
+} 
+.producto-agregar:hover{
+    max-width: 50%;
+    border: none;
+    background-color: rgb(108, 114, 114);
+}
+
+.icon-comprar{
+    text-align: center;
+
+}
+
+
 /* EDICION DEL FOOTER*/
 
 footer{
@@ -226,27 +249,27 @@ footer{
 
 /* EDICION PAGINA CARRITO  */
 
-.contenedorCarrito{
+.contenedor-carrito{
     display: flex;
     flex-direction: column;
     gap:1.5rem
 }
-.imgCarritoVacio{
+.img-carrito-vacio{
     width: 2%;
 }
 
-.carritoVacio,
-.carritoComprado{
+.carrito-vacio,
+.carrito-comprado{
     color:gray;
 }
 
-.carritoProductos{
+.carrito-productos{
     display: flex;
     flex-direction: column;
     gap:1rem
 }
 
-.carritoProducto{
+.carrito-producto{
     display: flex;
     justify-content: space-between;
     background-color: rgb(205, 199, 199);
@@ -256,18 +279,18 @@ footer{
 
 
 }
-.carritoProductoImagen{
+.carrito-producto-imagen{
     max-width: 8rem ;
     border-radius: 1rem;
 
 }
 
-.carritoAcciones{
+.carrito-acciones{
     display: flex;
     justify-content: space-between;
 }
 
-.carritoAccionesVaciar{
+.carrito-acciones-vaciar{
     border:0;
     background-color: rgb(238, 206, 166);
     padding: 1rem;
@@ -276,11 +299,11 @@ footer{
     
 }
 
-.carritoAccionesDerecha{
+.carrito-acciones-derecha{
     display: flex;
     
 }
-.carritoAccionesTotal{
+.carrito-acciones-total{
     display: flex;
     border:0;
     background-color: rgb(238, 206, 166);
@@ -291,7 +314,7 @@ footer{
     
 }
 
-.carritoAccionesComprar{
+.carrito-acciones-comprar{
     border:0;
     background-color: rgb(189, 156, 116);
     padding: 1rem;
@@ -299,20 +322,23 @@ footer{
     color:rgb(87, 76, 76)
     
 }
-/* .disable{
+.disable{
     display: none;
-} */
+} 
 
-.contadorCarrito{
+.contador-carrito{
     background-color: grey;
     color: white;
     padding: .15rem .25rem;
     border-radius: .25rem;
 }
-.carritoProductoEliminar{
+.carrito-producto-eliminar{
     border: 0;
     background-color: transparent;
 }
-.imgTacho{
+.img-tacho{
     max-width: 60%;
 }
+
+/* EDICION PAGINA GUIA DE TALLES */
+
