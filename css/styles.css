@@ -264,7 +264,7 @@ main{
     gap:1.5rem
 }
 .img-carrito-vacio{
-    width: 2%;
+    max-width: 2%;
 }
 
 .carrito-vacio,
@@ -292,6 +292,19 @@ main{
     max-width: 8rem ;
     border-radius: 1rem;
 
+}
+.carrito-producto-titulo{
+    max-width: 10 px;
+    text-align: center;
+}
+
+.carrito-producto-cantidad{
+    text-align: center;
+}
+
+
+.carrito-producto-precio{
+    text-align: center;
 }
 
 .carrito-acciones{

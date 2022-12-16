@@ -3,6 +3,9 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
+
+const inputSearch = document.querySelector("#inputSearch")
+
 const URL='bbdd/productos.json'
 productos=[]
 
@@ -12,6 +15,7 @@ fetch(URL)
 .then((response)=> data = response.json())
 .then ((data)=>productos.push(...data))
 .then(()=> cargarProductos(productos))
+
 
 
 
@@ -120,6 +124,35 @@ function actualizarNumerito() {
 }
 
 
+//FILTRAR PRODUCTOS. 
+
+
+function filtrarProductos() {
+    let resultado = productos.filter(producto => producto.nombre.toUpperCase().includes(inputSearch.value.toUpperCase().trim()))
+
+    if (resultado.length > 0) {
+            cargarProductos(resultado)
+        } else {
+            console.warn("No se han encontrado coincidencias.")
+        }
+}
+
+
+inputSearch.addEventListener("keypress", (e)=> {
+    if (e.key === 'Enter' && inputSearch.value.trim() !== "") {
+         filtrarProductos()
+             } else {
+         cargarProductos(productos)
+    }
+ })
+
+inputSearch.addEventListener("search", ()=> {
+if (inputSearch.value.trim() !== "") {
+    filtrarProductos()
+} else {
+    cargarProductos(productos)
+}
+})
 
 
 // LIBRERIAS
@@ -127,7 +160,7 @@ function actualizarNumerito() {
 Swal.fire({
     title: 'Bienvenido!',
     text: 'Aprovecha nuestras ofertas de fin de año.',
-    imageUrl: '../image/img-libreria.png',
+    imageUrl: 'image/img-libreria.png',
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: 'Custom image',

@@ -28,8 +28,8 @@ function cargarProductosCarrito() {
             div.innerHTML = `
                 <img class="carrito-producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
                 <div class="carrito-producto-titulo">
-                    <small>Título</small>
-                    <h3>${producto.titulo}</h3>
+                    <small>Producto</small>
+                    <h3>${producto.nombre}</h3>
                 </div>
                 <div class="carrito-producto-cantidad">
                     <small>Cantidad</small>
@@ -107,24 +107,3 @@ function comprarCarrito() {
 
 }
 
-const btnComprar = document.querySelector(".btnComprar")
-
-btnComprar.addEventListener("click", ()=> {
-    Swal.fire({
-        icon: 'question',
-        title: '¿Confirmas la compra?',
-        showCancelButton: true,
-        confirmButtonText: 'Confirmar',
-        cancelButtonText: `Cancelar`,
-      }) 
-      .then(result => {
-        if (result.isConfirmed) {
-            localStorage.removeItem("miCarrito")
-            carrito.length = 0
-            Swal.fire("Gracias por su compra", '', 'info')
-                .then(()=> {
-                    location.href = 'index.html'
-                })
-        }
-      })
-})
