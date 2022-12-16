@@ -1,0 +1,293 @@
+ [
+
+   
+    {
+       "id": "zapatillas-sale-01",
+       "titulo": "Zapatilla Nike Air Force Gamuza",
+       "nombre":"nike",
+       "talle":"38 al 44",
+       "texto":"Sale",
+       "imagen": "./image/zapassale/01.jpg",
+       "categoria": {
+           "nombre": "Ofertas",
+           "id": "sale"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatillas-sale-02",
+       "titulo": "Zapatilla Adidas Running",
+       "nombre":"adidas",
+       "talle":"38 al 44",
+       "texto":"Sale",
+       "imagen": "./image/zapassale/02.jpg",
+       "categoria": {
+           "nombre": "Ofertas",
+           "id": "sale"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatillas-sale-03",
+       "titulo": "Zapatilla Nike Air Force",
+       "nombre":"nike",
+       "talle":"38 al 44",
+       "texto":"Sale",
+       "imagen": "./image/zapassale/03.jpg",
+       "categoria": {
+           "nombre": "Ofertas",
+           "id": "sale"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatillas-sale-04",
+       "titulo": "Zapatilla Jordan Black ",
+       "nombre":"nike jordan",
+       "talle":"38 al 44",
+       "texto":"Sale",
+       "imagen": "./image/zapassale/04.jpg",
+       "categoria": {
+           "nombre": "Ofertas",
+           "id": "sale"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatillas-sale-05",
+       "titulo": "Zapatilla Jordan Holográficas",
+       "nombre":"jordan",
+       "talle":"34 al 44",
+       "texto":"Sale",
+       "imagen": "./image/zapassale/05.jpg",
+       "categoria": {
+           "nombre": "Ofertas",
+           "id": "sale"
+       },
+       "precio": 1000
+   },
+
+
+
+    
+
+
+   
+   {
+       "id": "zapatilla-hombre-01",
+       "titulo": "Zapatilla Adidas Running D4",
+       "nombre":"adidas",
+       "talle":"35 al 44",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/01.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-hombre-02",
+       "titulo": "Zapatilla Adidas Running D4",
+       "nombre":"adidas",
+       "talle":"35 al 44",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/02.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-hombre-03",
+       "titulo": "Zapatilla Adidas Running D4",
+       "nombre":"adidas",
+       "talle":"35 al 44",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/03.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       
+       "id": "zapatilla-hombre-04",
+       "titulo": "Zapatilla Adidas Running D4",
+       "nombre":"adidas",
+       "talle": "35 al 44",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/04.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       
+       "id": "zapatilla-hombre-05",
+       "titulo": "Zapatilla Nike Air Force 58",
+       "nombre":"nike",
+       "talle":"37 al 43",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/05.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-hombre-06",
+       "titulo": "Zapatilla Jordan Retro 4",
+       "nombre":"nike jordan",
+       "talle":"35 al 43",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/06.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-hombre-07",
+       "titulo": "Zapatilla Jordan Retro 4",
+       "nombre":"nike jordan",
+       "talle":"35 al 43",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/07.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-hombre-08",
+       "titulo": "Zapatilla Nike Air Force Gamuza",
+       "nombre":"nike",
+       "talle":"38 al 44",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/08.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-hombre-09",
+       "titulo": "Zapatilla Jordan Retro 4",
+       "nombre":"nike jordan",
+       "talle":"35 al 43",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/09.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-hombre-10",
+       "titulo": "Zapatilla Nike SD Dunk",
+       "nombre":"nike",
+       "talle":"37 al 44",
+       "texto":"Hombre",
+       "imagen": "./image/zapashombre/10.jpg",
+       "categoria": {
+           "nombre": "Hombres",
+           "id": "hombres"
+       },
+       "precio": 1000
+   },
+
+
+
+
+   {
+       
+       "id": "zapatilla-mujer-01",
+       "titulo": "Zapatilla Jordan Retro 4",
+       "nombre":"nike jordan",
+       "talle":"38 al 45",
+       "texto":"Mujer",
+       "imagen": "./image/zapasmujer/01.jpg",
+       "categoria": {
+           "nombre": "Mujeres",
+           "id": "mujeres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-mujer-02",
+       "titulo": "Zapatilla Puma RS",
+       "nombre":"puma",
+       "talle":"35 al 44",
+       "texto":"Mujer",
+       "imagen": "./image/zapasmujer/02.jpg",
+       "categoria": {
+           "nombre": "Mujeres",
+           "id": "mujeres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-mujer-03",
+       "titulo": "Zapatilla Puma RS",
+       "nombre":"puma",
+       "talle":"34 al 44",
+       "texto":"Mujer",
+       "imagen": "./image/zapasmujer/03.jpg",
+       "categoria": {
+           "nombre": "Mujeres",
+           "id": "mujeres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-mujer-04",
+       "titulo": "Zapatilla Puma RS",
+       "nombre":"puma",
+       "talle":"35 al 43",
+       "texto":"Mujer",
+       "imagen": "./image/zapasmujer/04.jpg",
+       "categoria": {
+           "nombre": "Mujeres",
+           "id": "mujeres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-mujer-05",
+       "titulo": "Zapatilla Convers Botas",
+       "nombre":"convers",
+       "talle":"35 al 44",
+       "texto":"Mujer",
+       "imagen": "./image/zapasmujer/05.jpg",
+       "categoria": {
+           "nombre": "Mujeres",
+           "id": "mujeres"
+       },
+       "precio": 1000
+   },
+   {
+       "id": "zapatilla-mujer-06",
+       "titulo": "Zapatilla Convers Plataforma",
+       "nombre":"convers",
+       "talle":"35 al 44",
+       "texto":"Mujer",
+       "imagen": "./image/zapasmujer/06.jpg",
+       "categoria": {
+           "nombre": "Mujeres",
+           "id": "mujeres"
+       },
+       "precio": 1000
+   }
+   
+  
+]

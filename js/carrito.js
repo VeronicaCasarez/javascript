@@ -106,3 +106,25 @@ function comprarCarrito() {
     contenedorCarritoComprado.classList.remove("disabled");
 
 }
+
+const btnComprar = document.querySelector(".btnComprar")
+
+btnComprar.addEventListener("click", ()=> {
+    Swal.fire({
+        icon: 'question',
+        title: '¿Confirmas la compra?',
+        showCancelButton: true,
+        confirmButtonText: 'Confirmar',
+        cancelButtonText: `Cancelar`,
+      }) 
+      .then(result => {
+        if (result.isConfirmed) {
+            localStorage.removeItem("miCarrito")
+            carrito.length = 0
+            Swal.fire("Gracias por su compra", '', 'info')
+                .then(()=> {
+                    location.href = 'index.html'
+                })
+        }
+      })
+})

@@ -16,10 +16,10 @@
 /* EDICION ESTRUCTURA CON GRID */
 .body-grid{
     width: 100%;
-    height: 100%; 
+    min-height: 10vh; 
     display: grid;
-    grid-column: 1fr ; 
-    grid-row: auto auto auto ;
+    grid-template-columns: 1fr ; 
+    grid-template-rows: auto 1fr auto ;
     grid-template-areas: "header"
                           "main"
                           "footer";
@@ -138,7 +138,10 @@ a {
    height: 95%;
   }
  
-  
+  .texto-carrusel{
+    color: #4f1a1a;
+    margin-bottom: 6%;
+  }
   
 
 
@@ -249,6 +252,12 @@ footer{
 
 /* EDICION PAGINA CARRITO  */
 
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .contenedor-carrito{
     display: flex;
     flex-direction: column;
@@ -340,5 +349,101 @@ footer{
     max-width: 60%;
 }
 
+.footer-carrito{
+    margin-top: auto;
+}
+
+
+
 /* EDICION PAGINA GUIA DE TALLES */
+.main-guia-talles{
+    margin: 2%;
+}
+
+.titulo-guia-talles{
+    margin: 5%;
+    text-align: center;
+}
+
+.subtitulos-guia-talles{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.img-guia-talles{
+    max-width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/* RESPONSIVE  */
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+   
+   
+}
+
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    .buscador-productos{
+        margin-left: 5%;
+    }
+   
+
+
+}
+
+
+
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .buscador-productos{
+        display: none;
+    }
+    .container-card{
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      
+        
+        
+         
+    }
+   
+   
+
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .buscador-productos{
+        display: none;
+    }
+ 
+    .container-card{
+        
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+      
+     
+        
+         
+    }
+   
+   
+    
+
+   
+
+
+ 
+}
+
+
 
