@@ -408,10 +408,7 @@ main{
     }
    
 
-
 }
-
-
 
 
 /* // `md` applies to small devices (landscape phones, less than 768px) */
@@ -440,14 +437,15 @@ main{
  
     .container-card{
         
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: 1fr;
   
     }
     
    .swal-wide{
-    max-width: 100%;
+    max-width: 60%;
     max-height: auto;
+    size: 60%;
    }
 }
 

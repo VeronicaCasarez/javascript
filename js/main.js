@@ -35,7 +35,7 @@ function cargarProductos(productosElegidos) {
                    <div >
                        <h5 class="producto-titulo">${producto.titulo} </h5>
                        <p class="producto-talle">${producto.talle}.</p>
-                       <p class="producto-precio">${producto.precio}</p>
+                       <p class="producto-precio">$ ${producto.precio}</p>
                        <div class="icon-comprar">
                            <button class="producto-agregar"   id="${producto.id}" >Agregar <img  src="./image/carrito-de-compras.png" alt="" class="img-carrito"></button>
                        </div>
