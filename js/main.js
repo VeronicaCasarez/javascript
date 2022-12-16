@@ -112,7 +112,7 @@ function agregarAlCarrito(e) {
    actualizarNumerito();
 
    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-   toast(` Se agrego el producto al carrito` , 'grey')
+   toast(` Se agrego el producto al carrito` , 'lightbrown')
    
 }
 
@@ -176,7 +176,7 @@ Toastify({
     destination: "https://github.com/apvarun/toastify-js",
     newWindow: true,
     close: true,
-    gravity: "top", // `top` or `bottom`
+    gravity: "botton", // `top` or `bottom`
     position: "right", // `left`, `center` or `right`
     stopOnFocus: true, // Prevents dismissing of toast on hover
     style: {

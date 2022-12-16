@@ -423,13 +423,14 @@ main{
         
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-      
-        
-        
-         
+
     }
-   
-   
+
+    .Swal.fire{
+        max-width: 200%;
+        max-height: 100%;
+    }
+
 
 }
 
@@ -443,10 +444,12 @@ main{
         
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-      
-     
-        
+
          
+    }
+    .Swal.fire{
+        max-width: 100%;
+        max-height: auto;
     }
    
    
