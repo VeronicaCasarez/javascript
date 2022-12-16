@@ -425,12 +425,10 @@ main{
         grid-template-rows: 1fr;
 
     }
-
-    .Swal.fire{
+    .swal-wide{
         max-width: 200%;
-        max-height: 100%;
-    }
-
+        max-height: auto;
+       }
 
 }
 
@@ -444,21 +442,13 @@ main{
         
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-
-         
+  
     }
-    .Swal.fire{
-        max-width: 100%;
-        max-height: auto;
-    }
-   
-   
     
-
-   
-
-
- 
+   .swal-wide{
+    max-width: 100%;
+    max-height: auto;
+   }
 }
 
 

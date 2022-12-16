@@ -164,7 +164,8 @@ Swal.fire({
     imageWidth: 400,
     imageHeight: 200,
     imageAlt: 'Custom image',
-    confirmButtonText:"Aceptar"
+    confirmButtonText:"Aceptar",
+    customClass: 'swal-wide',
 })
 
 
