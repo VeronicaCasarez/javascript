@@ -3,7 +3,7 @@
    
     {
        "id": "zapatillas-sale-01",
-       "titulo": "Zapatilla Nike Air Force Gamuza",
+       "titulo": "Nike Air Force Gamuza",
        "nombre":"Nike",
        "talle":"38 al 44",
        "texto":"Sale",
@@ -16,7 +16,7 @@
    },
    {
        "id": "zapatillas-sale-02",
-       "titulo": "Zapatilla Adidas Running",
+       "titulo": "Adidas Running",
        "nombre":"Adidas",
        "talle":"38 al 44",
        "texto":"Sale",
@@ -29,7 +29,7 @@
    },
    {
        "id": "zapatillas-sale-03",
-       "titulo": "Zapatilla Nike Air Force",
+       "titulo": "Nike Air Force",
        "nombre":"Nike",
        "talle":"38 al 44",
        "texto":"Sale",
@@ -42,7 +42,7 @@
    },
    {
        "id": "zapatillas-sale-04",
-       "titulo": "Zapatilla Jordan Black ",
+       "titulo": "Nike Jordan Black ",
        "nombre":"Nike Jordan",
        "talle":"38 al 44",
        "texto":"Sale",
@@ -55,7 +55,7 @@
    },
    {
        "id": "zapatillas-sale-05",
-       "titulo": "Zapatilla Jordan Holográficas",
+       "titulo": "Nike Jordan Holográficas",
        "nombre":"Nike Jordan",
        "talle":"34 al 44",
        "texto":"Sale",
@@ -75,7 +75,7 @@
    
    {
        "id": "zapatilla-hombre-01",
-       "titulo": "Zapatilla Adidas Running D4",
+       "titulo": "Adidas Running D4",
        "nombre":"Adidas",
        "talle":"35 al 44",
        "texto":"Hombre",
@@ -88,7 +88,7 @@
    },
    {
        "id": "zapatilla-hombre-02",
-       "titulo": "Zapatilla Adidas Running D4",
+       "titulo": "Adidas Running D4",
        "nombre":"Adidas",
        "talle":"35 al 44",
        "texto":"Hombre",
@@ -101,7 +101,7 @@
    },
    {
        "id": "zapatilla-hombre-03",
-       "titulo": "Zapatilla Adidas Running D4",
+       "titulo": "Adidas Running D4",
        "nombre":"Adidas",
        "talle":"35 al 44",
        "texto":"Hombre",
@@ -115,7 +115,7 @@
    {
        
        "id": "zapatilla-hombre-04",
-       "titulo": "Zapatilla Adidas Running D4",
+       "titulo": "Adidas Running D4",
        "nombre":"Adidas",
        "talle": "35 al 44",
        "texto":"Hombre",
@@ -129,7 +129,7 @@
    {
        
        "id": "zapatilla-hombre-05",
-       "titulo": "Zapatilla Nike Air Force 58",
+       "titulo": "Nike Air Force 58",
        "nombre":"Nike",
        "talle":"37 al 43",
        "texto":"Hombre",
@@ -142,7 +142,7 @@
    },
    {
        "id": "zapatilla-hombre-06",
-       "titulo": "Zapatilla Jordan Retro 4",
+       "titulo": "Nike Jordan Retro 4",
        "nombre":"Nike Jordan",
        "talle":"35 al 43",
        "texto":"Hombre",
@@ -155,7 +155,7 @@
    },
    {
        "id": "zapatilla-hombre-07",
-       "titulo": "Zapatilla Jordan Retro 4",
+       "titulo": "Nike Jordan Retro 4",
        "nombre":"Nike Jordan",
        "talle":"35 al 43",
        "texto":"Hombre",
@@ -168,7 +168,7 @@
    },
    {
        "id": "zapatilla-hombre-08",
-       "titulo": "Zapatilla Nike Air Force Gamuza",
+       "titulo": "Nike Air Force Gamuza",
        "nombre":"Nike",
        "talle":"38 al 44",
        "texto":"Hombre",
@@ -181,7 +181,7 @@
    },
    {
        "id": "zapatilla-hombre-09",
-       "titulo": "Zapatilla Jordan Retro 4",
+       "titulo": "Nike Jordan Retro 4",
        "nombre":"Nike Jordan",
        "talle":"35 al 43",
        "texto":"Hombre",
@@ -194,7 +194,7 @@
    },
    {
        "id": "zapatilla-hombre-10",
-       "titulo": "Zapatilla Nike SD Dunk",
+       "titulo": "Nike SD Dunk",
        "nombre":"Nike",
        "talle":"37 al 44",
        "texto":"Hombre",
@@ -212,7 +212,7 @@
    {
        
        "id": "zapatilla-mujer-01",
-       "titulo": "Zapatilla Jordan Retro 4",
+       "titulo": "Nike Jordan Retro 4",
        "nombre":"Nike Jordan",
        "talle":"38 al 45",
        "texto":"Mujer",
@@ -238,7 +238,7 @@
    },
    {
        "id": "zapatilla-mujer-03",
-       "titulo": "Zapatilla Puma RS",
+       "titulo": "Puma RS",
        "nombre":"Puma",
        "talle":"34 al 44",
        "texto":"Mujer",
@@ -251,7 +251,7 @@
    },
    {
        "id": "zapatilla-mujer-04",
-       "titulo": "Zapatilla Puma RS",
+       "titulo": "Puma RS",
        "nombre":"Puma",
        "talle":"35 al 43",
        "texto":"Mujer",
@@ -264,7 +264,7 @@
    },
    {
        "id": "zapatilla-mujer-05",
-       "titulo": "Zapatilla Convers Botas",
+       "titulo": "Convers Botas",
        "nombre":"Convers",
        "talle":"35 al 44",
        "texto":"Mujer",
@@ -277,7 +277,7 @@
    },
    {
        "id": "zapatilla-mujer-06",
-       "titulo": "Zapatilla Convers Plataforma",
+       "titulo": "Convers Plataforma",
        "nombre":"Convers",
        "talle":"35 al 44",
        "texto":"Mujer",
