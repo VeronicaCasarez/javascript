@@ -430,6 +430,8 @@ footer {
         grid-template-rows: 1fr;
 
     }
-
+    .swal-wide{
+        max-width: 70% !important;
+    }
 }
 
