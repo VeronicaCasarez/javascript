@@ -160,17 +160,6 @@ function filtrarProductos() {
 
 // LIBRERIAS
 
-Swal.fire({
-    title: 'Bienvenido!',
-    text: 'Aprovecha nuestras ofertas de fin de año.',
-    imageUrl: 'image/img-libreria.png',
-    imageWidth: 400,
-    imageHeight: 200,
-    imageAlt: 'Custom image',
-    confirmButtonText: "Aceptar",
-    customClass:"swal-wide",
-})
-
 
 
 const toast = (text, bgcolor) => {
